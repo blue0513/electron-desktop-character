@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Electron Desktop Character</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <p class="image">
+      <img src="images/loading.gif" name="character">
+    </p>
+
+    <script type="text/javascript">
+      const json = require('./settings.json');
+      const images = json.images;
+      const interval = json.interval;
+      let count = 0;
+
+      imgSwitcher();
+
+      function imgSwitcher() {
+	  if (count == images.length) count = 0;
+	  document.character.src = images[count];
+	  setTimeout("imgSwitcher()", interval);
+	  count++;
+      }
+    </script>
+
+  </body>
+</html>

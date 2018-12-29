@@ -1,0 +1,10 @@
+{
+    "images": [
+	"character/image0.png",
+	"character/image1.png",
+	"character/image2.png",
+	"character/image3.png"
+    ],
+    "width": 200,
+    "interval": 2000
+}

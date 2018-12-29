@@ -1,0 +1,13 @@
+html {
+    -webkit-app-region: drag;
+}
+
+html, body {
+    height: 100%;
+    width:  100%;
+    margin: 0;
+}
+
+p.image img {
+    width: 100%;
+}
